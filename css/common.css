@@ -1,0 +1,131 @@
+/* CSS Document */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  word-break: break-all;
+}
+
+a {
+  color: #1ca9e3;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover img {
+  opacity: .8;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+  display: block;
+}
+img {
+  pointer-events: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.effect-fade-head {
+  opacity : 0;
+  transform : translate(0, 10px);
+  transition : all 500ms;
+  }
+  
+  .effect-fade-head.effect-scroll {
+  opacity : 1;
+  transform : translate(0, 0);
+  }
+
+.effect-fade {
+  opacity : 0;
+  transform : translate(0, 45px);
+  transition : all 1000ms;
+  }
+  
+  .effect-fade.effect-scroll {
+  opacity : 1;
+  transform : translate(0, 0);
+  }
+
+/*--------------------------------
+ pageTop
+---------------------------------*/
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #ef3f98;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -23px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+/*--------------------------------
+ Footer
+---------------------------------*/
+
+#footer {
+  background-color: #e7eff1;
+}
+
+#footer .inner {
+  padding: 20px;
+}
+
+#footer .copyright {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+

@@ -1,0 +1,411 @@
+/* CSS Document */
+
+/*--------------------------------
+　全体
+---------------------------------*/
+
+#wrapper {
+  background-color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.inner {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*--------------------------------
+　ヘッダー
+---------------------------------*/
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 280px;
+}
+
+#header .logo {
+  display: block;
+}
+
+#header .logo-name {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 41px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #333;
+  margin-top: 5px;
+}
+
+
+/*--------------------------------
+　グローバルナビ
+---------------------------------*/
+
+#gnav {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 100;
+}
+
+#gnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#gnav li {
+  padding: 0 30px;
+}
+
+#gnav li a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+}
+
+#gnav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+}
+
+/*--------------------------------
+　Section
+---------------------------------*/
+
+.section .inner {
+  padding: 80px 0;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section .section-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section .section-title {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section .section-desc {
+  text-align: center;
+}
+
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.two-column-image {
+  width: 33%;
+}
+
+.two-column-image img {
+  margin: 0 auto;
+}
+
+.two-column-desc {
+  width: 62%;
+}
+
+/*--------------------------------
+　about
+---------------------------------*/
+#about .two-column-wrapper{
+  position: relative;
+}
+
+#about .two-column-image {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+}
+
+#about .two-column-desc {
+  width: 75%;
+  background-color: #edf7f9;
+  padding: 40px 40px 40px 80px;
+  margin: 50px 0 0 210px;
+}
+#about .two-column-desc .text{
+  letter-spacing: 1.8;
+}
+
+/*--------------------------------
+ skill
+---------------------------------*/
+#skill .section-title-block{
+  width: 700px;
+  margin: auto;
+  text-align: left;
+}
+#skill .section-title-skill {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  font-size:28px;
+}
+#skill .section-title-skill:after {
+  content: "";
+  height:1px;
+  flex-grow: 1;
+  background-color:#333;
+  margin-left: 1rem;
+}
+#skill .skill-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#skill .skill-br {
+  flex-basis: 33%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  border-left: 10px solid #b9e1f8;
+  padding-left: 13px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+}
+#skill .skill-title {
+  display: block;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#skill .skill-level{
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+/*--------------------------------
+　works
+---------------------------------*/
+#works{
+  background-color: #f7f7f7;
+}
+
+#works .card {
+  width: 30%;
+}
+
+#works .card {
+  margin-bottom: 50px;
+}
+
+#works .card-image {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#works .card-caption-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#works .card-caption-info {
+  font-size: 12px;
+}
+
+#works .card-caption-url {
+  font-size: 10px;
+}
+
+#works .card-wrapper {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+/*--------------------------------
+ contact
+---------------------------------*/
+
+#contact .email {
+  text-align: center;
+  font-size: 18px;
+}
+
+#contact .email::before {
+  content:'mail_outline';
+  font-family: "Material Icons";
+  font-size: 23px;
+  color: #0a80b5;
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+
+
+
+/*media Queries 767
+----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  #header {
+    height: 40vh;
+  }
+
+  #header .logo-name {
+    font-size: 28px;
+  }
+
+  #gnav li {
+    padding: 0 10px;
+  }
+
+  #gnav li a {
+    font-size: 20px;
+  }
+
+  #contents {
+    padding: 40px 0 0;
+  }
+
+  .section .inner {
+    padding: 30px 15px;
+  }
+
+  .section .section-title-block {
+    margin-bottom: 10px;
+  }
+
+  .section .section-title {
+    font-size: 32px;
+  }
+  #about .two-column-wrapper {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #about .two-column-image {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    position: static;
+    z-index: 1
+  }
+
+  #about .two-column-desc {
+    width: 100%;
+    margin: -40px auto 0px;
+    padding: 40px 20px;
+  }
+  #about .two-column-desc .text {
+    font-size: 16px;
+  }
+
+  #skill .skill-wrapper {
+    width: 100%;
+  }
+
+  #skill .section-title-block{
+    width: 94%;
+    margin: auto;
+    text-align: left;
+  }
+
+  #skill .skill-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #skill .skill-br{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+
+  #skill .skill-title{
+    font-size: 14px;
+  }
+
+  #skill .skill-level{
+    font-size: 16px;
+  }
+
+  #works .card {
+    width: 48%;
+  }
+
+  #works .card-caption-title {
+    font-size: 14px;
+  }
+
+  #works .card-caption-info {
+    font-size: 13px;
+  }
+
+}
