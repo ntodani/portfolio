@@ -158,26 +158,12 @@
   }
 
   #s-header {
-    font-size: 2vw;
+    font-size: 5vw;
   }
-  
-  #s-header-logo {
-    display: block;
-    z-index: 999;
-  }
-  
-  #s-header-logo .logo-name {
-    display: block;
-    color: #333;
-    padding: 10px 0
-  }
-  
+    
   #s-header-logo.fixed {
-    font-size:2vw;
+    font-size:5vw;
   }
-
-
-
 
   #header .logo-name {
     font-size: 4vw;
